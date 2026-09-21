@@ -97,3 +97,7 @@ depends on whether the identification assumptions hold, not on how complex the m
   (reduced-form jump ÷ first-stage jump). Its standard error does not come directly from
   OLS, so it is bootstrapped. A bandwidth sensitivity table (±0.25 to ±1.0) is printed in
   section 4 of the script.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
