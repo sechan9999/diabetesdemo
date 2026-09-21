@@ -39,15 +39,17 @@ python analysis_confounded.py   # unmeasured confounding: the conclusion reverse
 
 ### Interactive app
 
+**https://diabetesdemo.streamlit.app/?lang=en**
+
 Sliders for the true effect, sample size, prescribing threshold, bandwidth and
-confounding strength, so you can watch each method's bias move in real time.
+confounding strength, so you can watch each method's bias move in real time. The
+interface is available in English and Korean; the `?lang=` parameter selects one.
 
 ```bash
 streamlit run app.py
 ```
 
-At default settings it reproduces the numbers in the tables above. To deploy, point
-[Streamlit Community Cloud](https://share.streamlit.io) at this repo and `app.py`.
+At default settings it reproduces the numbers in the tables above.
 
 ## Results
 
