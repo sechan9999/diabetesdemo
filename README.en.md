@@ -51,6 +51,8 @@ streamlit run app.py
 
 At default settings it reproduces the numbers in the tables above.
 
+![App interface showing estimates for the unconfounded and confounded scenarios side by side, with forest plots against the true-value reference line](docs/app-overview-en.png)
+
 ## Results
 
 ### Without confounding (`analysis.py`)
@@ -90,6 +92,12 @@ threshold:
 | Oracle regression (U observed) | -1.215 | -0.015 | 8,000 |
 | Fuzzy RDD | -1.224 | -0.024 | 2,934 |
 | (true value) | -1.2 | — | — |
+
+![Discontinuity at the threshold. On the left the two colors split cleanly at 7.0%; on the right they mix across it](docs/discontinuity-en.png)
+
+On the left, assignment is deterministic and the colors split cleanly at the threshold.
+On the right, `U` makes assignment probabilistic and the colors mix across it. That
+second case is what fuzzy RDD exists to handle.
 
 Simple regression **understates the drug's benefit by 28%**. The oracle regression, which
 includes `U`, recovers the truth — confirming the bias comes from unmeasured confounding
