@@ -1,4 +1,4 @@
-# Diabetes Drug Trial: Three Analysis Methods Compared
+# Diabetes Drug Trial: Three Methods, With and Without Confounding
 
 *[한국어 README](README.md)*
 
