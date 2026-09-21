@@ -53,6 +53,15 @@ At default settings it reproduces the numbers in the tables above.
 
 ![App interface showing estimates for the unconfounded and confounded scenarios side by side, with forest plots against the true-value reference line](docs/app-overview-en.png)
 
+The app follows the system theme. The dark palette is not an inversion of the light
+one — its steps were chosen for the dark surface and validated against it, so both
+themes clear the same colorblind-separation and contrast gates. Below is the same set
+of estimates rendered in each.
+
+| Light | Dark |
+|---|---|
+| ![Forest plots in the light theme](docs/forest-light-en.png) | ![Forest plots in the dark theme](docs/forest-dark-en.png) |
+
 ## Results
 
 ### Without confounding (`analysis.py`)
