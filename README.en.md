@@ -37,6 +37,18 @@ python analysis.py              # no confounding: the three methods compared
 python analysis_confounded.py   # unmeasured confounding: the conclusion reverses
 ```
 
+### Interactive app
+
+Sliders for the true effect, sample size, prescribing threshold, bandwidth and
+confounding strength, so you can watch each method's bias move in real time.
+
+```bash
+streamlit run app.py
+```
+
+At default settings it reproduces the numbers in the tables above. To deploy, point
+[Streamlit Community Cloud](https://share.streamlit.io) at this repo and `app.py`.
+
 ## Results
 
 ### Without confounding (`analysis.py`)

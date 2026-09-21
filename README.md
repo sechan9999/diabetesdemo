@@ -37,6 +37,19 @@ python analysis.py              # 교란이 없는 경우: 세 방법 비교
 python analysis_confounded.py   # 미관측 교란이 있는 경우: 결론이 뒤집힌다
 ```
 
+### 대화형 앱
+
+슬라이더로 참 처치효과, 표본 수, 처방 기준선, 대역폭, 교란 강도를 바꿔가며
+각 방법의 편향이 어떻게 움직이는지 볼 수 있습니다.
+
+```bash
+streamlit run app.py
+```
+
+기본 설정에서는 위 표의 숫자가 그대로 재현됩니다. 배포는
+[Streamlit Community Cloud](https://share.streamlit.io)에서 이 저장소와 `app.py`를
+지정하면 됩니다.
+
 ## 결과 요약
 
 ### 교란이 없을 때 (`analysis.py`)
